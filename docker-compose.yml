@@ -1,0 +1,16 @@
+version: "3"
+services:
+  django:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        UID: ${UID:-20000}
+        GID: ${GID:-20000}
+    volumes:
+      - "./django:/app/"
+      - "./requirements.txt:/app/requirements.txt"
+    ports:
+      - "8000:80"
+    tty: true
+    working_dir: /app

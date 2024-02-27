@@ -1,0 +1,39 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-docker-compose
+{
+  "name": "Existing Docker Compose (Extend)",
+  "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+  "service": "django",
+  "workspaceFolder": "/app",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "emmet.triggerExpansionOnTab": true,
+        "emmet.showSuggestionsAsSnippets": true,
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-python.python",
+        "esbenp.prettier-vscode",
+        "ecmel.vscode-html-css",
+        "batisteo.vscode-django",
+        "redhat.vscode-yaml",
+        "formulahendry.auto-rename-tag",
+        "ionutvmi.path-autocomplete",
+        "ms-python.black-formatter",
+        "shardulm94.trailing-spaces",
+        "kevinrose.vsc-python-indent",
+        "oderwat.indent-rainbow",
+        "streetsidesoftware.code-spell-checker",
+        "ionutvmi.path-autocomplete",
+        "pranaygp.vscode-css-peek"
+      ]
+    }
+  }
+
+  // Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "devcontainer"
+}
