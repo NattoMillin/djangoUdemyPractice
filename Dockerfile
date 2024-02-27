@@ -26,5 +26,5 @@ WORKDIR /app
 
 COPY django /app/
 
-RUN python -m pip install -r requirements.txt
+RUN python -m pip install -r req.txt
 
