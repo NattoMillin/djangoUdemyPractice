@@ -1,0 +1,39 @@
+{
+  "editor.fontFamily": "'Source Han Code JP'",
+  "terminal.integrated.fontFamily": "'Source Han Code JP'",
+  "git.confirmSync": false,
+  "explorer.confirmDragAndDrop": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "git.autofetch": true,
+  "unibeautify.defaultConfig": "/app/django/.unibeautifyrc.json",
+  "editor.formatOnSave": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "git.enableSmartCommit": true,
+  "terminal.integrated.fontSize": 11,
+  "editor.fontSize": 12,
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "remote.autoForwardPortsSource": "hybrid",
+  "[django-html]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Glavin001.unibeautify-vscode"
+  },
+  "files.associations": {
+    "templates/*.html": "django-html",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.languageServer": "Default",
+  "python.linting.pylintArgs": ["--load-plugins=pylint_django"],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "editor.defaultFormatter": "ms-python.black-formatter"
+}
