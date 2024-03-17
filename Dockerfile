@@ -24,7 +24,8 @@ USER dev
 
 WORKDIR /app
 
-COPY django /app/
+COPY SNS /app/
+COPY .unibeautifyrc.json /app/
 
 RUN python -m pip install -r req.txt
 

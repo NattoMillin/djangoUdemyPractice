@@ -8,8 +8,9 @@ services:
         UID: ${UID:-20000}
         GID: ${GID:-20000}
     volumes:
-      - "./django:/app/"
+      - "./SNS:/app/"
       - "./req.txt:/app/req.txt"
+      - ".unibeautifyrc.json:/app/.unibeautifyrc.json"
     ports:
       - "8000:80"
     tty: true
